@@ -1,10 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import Login from './src/pages/Login/Login';
 import styled from 'styled-components/native';
+import Login from './src/pages/Login';
 
 
-const ContainerApp = styled.safeAreaView`
+const ContainerApp = styled.SafeAreaView`
 flex: 1;
 `
 
@@ -12,16 +11,7 @@ export default function App() {
   return (
    <ContainerApp>
     <StatusBar hidden/>
-    <Login/>
+    <Login />
    </ContainerApp>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'purple',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
