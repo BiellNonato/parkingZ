@@ -21,7 +21,7 @@ margin-top: 20;
 justify-self: center;
 align-self: center;
 width: 300;
-height: 300;
+height: 320;
 `
 export const Subtittle = styled.Text`
 justify-self: center;

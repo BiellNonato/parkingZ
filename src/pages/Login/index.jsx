@@ -1,4 +1,3 @@
-import { Text } from "react-native";
 import { LoginContainer, Titulo, Image, Subtittle, InputEmail, InputSenha, InputContainer, Button, TitleButton, IconsContainer, } from "./style";
 
 
