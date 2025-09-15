@@ -1,7 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import styled from 'styled-components/native';
 // import Login from './src/pages/Login';
-import Cadastro from './src/pages/Cadastro';
+//import Cadastro from './src/pages/Cadastro';
+import Entrada from './src/pages/Entrada'
 
 
 const ContainerApp = styled.SafeAreaView`
@@ -13,7 +14,8 @@ export default function App() {
    <ContainerApp>
     <StatusBar hidden/>
     {/* <Login /> */}
-    <Cadastro/>
+    {/* <Cadastro/> */}
+    <Entrada/>
    </ContainerApp>
   );
 }
