@@ -1,9 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import styled from 'styled-components/native';
+import Veiculos from './src/pages/Veiculos';
 // import Login from './src/pages/Login';
 //import Cadastro from './src/pages/Cadastro';
 // import Entrada from './src/pages/Entrada'
-import Saida from './src/pages/Saida';
+// import Saida from './src/pages/Saida';
 
 
 const ContainerApp = styled.SafeAreaView`
@@ -17,7 +18,8 @@ export default function App() {
     {/* <Login /> */}
     {/* <Cadastro/> */}
     {/* <Entrada/> */}
-    <Saida/>
+    {/* <Saida/> */}
+    <Veiculos/>
    </ContainerApp>
   );
 }
