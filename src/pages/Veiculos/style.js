@@ -16,17 +16,30 @@ export const InfoContainer = styled.View`
 justify-self: center;
 align-self: center;
 background-color: white;
-width: 100%;
-height: 90;
+width: 99%;
+height: 80;
 border-radius: 8px;
-padding: 5px 20px;
 `
-ex
 
 export const InfoTitle = styled.Text`
+display: flex;
 justify-self: center;
-align-self: flex-end;
+align-self: center;
 margin-top: 30;
- color: black;
+font-size: 19;
+color: black;
+`
+
+export const Image = styled.Image`
+margin: 0px 10px;
+`
+
+export const PlacaInfo = styled.Text`
+position: absolute;
+padding: 10px;
+font-size: 20;
+color: black;
+justify-self: center;
+align-self: center;
 `
 

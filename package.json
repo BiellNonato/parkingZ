@@ -17,7 +17,8 @@
     "react-native-asset": "^2.1.1",
     "styled-components": "^6.1.19",
     "expo-font": "~13.3.2",
-    "undefined": "@expo-google-fonts/[trajan-pro/regular]"
+    "undefined": "@expo-google-fonts/[trajan-pro/regular]",
+    "@expo/vector-icons": "^14.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
