@@ -1,4 +1,4 @@
-import { LoginContainer, Titulo, Imagem, Subtittle, InputEmail, InputSenha, InputContainer, Button, TitleButton, IconsContainer, Line, SocialIcons,Image } from "./style";
+import { LoginContainer, Titulo, Imagem, Subtittle, InputEmail, InputSenha, InputContainer, Button, TitleButton, IconsContainer, Line, SocialIcons, Image } from "./style";
 
 
 
@@ -17,14 +17,14 @@ export default function Login() {
       </Button>
       <IconsContainer>
         <SocialIcons>
-         <Image source={require('../../assets/facebook.png')}></Image>
+          <Image source={require('../../assets/facebook.png')}></Image>
         </SocialIcons>
-        <SocialIcons> <Image source={require('../../assets/facebook.png')}></Image></SocialIcons>
-        <SocialIcons> <Image source={require('../../assets/facebook.png')}></Image></SocialIcons>
+        <SocialIcons> <Image source={require('../../assets/instagram.png')}></Image></SocialIcons>
+        <SocialIcons> <Image source={require('../../assets/x.png')}></Image></SocialIcons>
       </IconsContainer>
       <Line></Line>
     </LoginContainer>
-    
+
   )
 }
 

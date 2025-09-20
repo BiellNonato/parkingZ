@@ -78,3 +78,41 @@ align-self: center;
 font-size: 15;
 color: black;
 `
+
+export const Line = styled.View`
+height: 1.5;
+opacity: 0.4;
+background-color: #FFF;
+width: 80%;
+margin-top: 10;
+position:absolute;
+bottom: 80px;
+align-self:center;
+`
+
+export const IconsContainer = styled.View`
+flex-direction: row;
+justify-content: space-between;
+padding: 20px;
+justify-self: center;
+align-self: center;
+ width: 300px;
+height: 100px;
+ gap: 10;
+`
+export const SocialIcons = styled.View`
+width: 52px;
+height: 52px;
+justify-self: center;
+align-self: center;
+justify-content: center;
+background-color: white;
+border-radius:80px;
+
+`
+export const CadastroImage = styled.Image`
+width: 19px;
+height: 19px;
+align-self: center;
+justify-self: center;
+`

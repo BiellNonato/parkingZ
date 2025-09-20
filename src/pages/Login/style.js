@@ -55,7 +55,7 @@ margin-top: 30px;
 justify-self: center;
 align-self: center;
 border-radius: 10px;
-width: 130;
+width: 140;
 height: 41;
 background-color:  #D9D9D9;
 `
@@ -104,8 +104,8 @@ border-radius:80px;
 
 `
 export const Image = styled.Image`
-width: 12px;
-height: 20px;
+width: 19px;
+height: 19px;
 align-self: center;
 justify-self: center;
 `

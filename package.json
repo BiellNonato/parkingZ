@@ -9,16 +9,16 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "expo": "~53.0.22",
+    "@expo/vector-icons": "^14.1.0",
+    "expo": "^54.0.8",
     "expo-asset": "~11.1.7",
+    "expo-font": "~13.3.2",
     "expo-status-bar": "~2.2.3",
     "react": "19.0.0",
     "react-native": "0.79.6",
     "react-native-asset": "^2.1.1",
     "styled-components": "^6.1.19",
-    "expo-font": "~13.3.2",
-    "undefined": "@expo-google-fonts/[trajan-pro/regular]",
-    "@expo/vector-icons": "^14.1.0"
+    "undefined": "@expo-google-fonts/[trajan-pro/regular]"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
