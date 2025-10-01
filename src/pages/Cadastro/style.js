@@ -3,7 +3,7 @@ import styled from "styled-components/native";
 export const CadastroContainer = styled.View`
 flex: 1;
 gap: 15;
- background-color : #454848;
+background-color : #454848;
 
 `
 export const Image = styled.Image`
@@ -11,8 +11,8 @@ margin-top: 27;
 margin-right: 40;
 justify-self: center;
 align-self: center;
-width: 200;
-height: 200;
+width: 350;
+height: 250;
 `
 
 export const TitlleGuaraná = styled.Text`
@@ -66,7 +66,7 @@ margin-top: 30px;
 justify-self: center;
 align-self: center;
 border-radius: 10px;
-width: 116;
+width: 140;
 height: 41;
 background-color:  #D9D9D9;
 `

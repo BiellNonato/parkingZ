@@ -55,7 +55,7 @@ margin-top: 30px;
 justify-self: center;
 align-self: center;
 border-radius: 10px;
-width: 140;
+width: 160;
 height: 41;
 background-color:  #D9D9D9;
 `
@@ -85,13 +85,13 @@ align-self:center;
 
 export const IconsContainer = styled.View`
 flex-direction: row;
-justify-content: space-between;
+justify-content: center;
 padding: 20px;
 justify-self: center;
 align-self: center;
- width: 300px;
+width: 300px;
 height: 100px;
- gap: 10;
+gap: 63;
 `
 export const SocialIcons = styled.View`
 width: 52px;
@@ -108,7 +108,7 @@ width: 19px;
 height: 19px;
 align-self: center;
 justify-self: center;
-`
+`  
 
 
 
