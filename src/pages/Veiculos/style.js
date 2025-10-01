@@ -74,22 +74,7 @@ export const Data = styled.Text`
   color: white;
   font-family: monospace;
 `
-const Overlay = styled.View`
-  flex: 1;
-  background-color: rgba(0, 0, 0, 0.6);
-  align-items: center;
-  justify-content: center;
-`;
 
-const ModalBox = styled.View`
-  width: 80%;
-  padding: 20px;
-  background-color: white;
-  border-radius: 16px;
-  align-items: center;
-`;
-
-`
 export const TitleButton = styled.Text`
 margin-top: 8px;
 justify-self: center;
