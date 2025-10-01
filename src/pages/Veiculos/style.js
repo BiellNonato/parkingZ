@@ -64,3 +64,52 @@ export const Data = styled.Text`
   color: #000;
   font-family: monospace;
 `
+const Overlay = styled.View`
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+  align-items: center;
+  justify-content: center;
+`;
+
+const ModalBox = styled.View`
+  width: 80%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 16px;
+  align-items: center;
+`;
+
+const TituloModal = styled.Text`
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+`;
+
+const SubTitulo = styled.Text`
+  font-size: 16px;
+  margin-bottom: 20px;
+`;
+
+const Botao = styled.TouchableOpacity`
+  width: 100%;
+  padding: 12px;
+  margin-vertical: 6px;
+  border-radius: 12px;
+  background-color: #5d97c3;
+  align-items: center;
+`;
+
+const TextoBotao = styled.Text`
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+`;
+
+const Fechar = styled.TouchableOpacity`
+  margin-top: 10px;
+`;
+
+const TextoFechar = styled.Text`
+  color: #555;
+  font-size: 14px;
+`;

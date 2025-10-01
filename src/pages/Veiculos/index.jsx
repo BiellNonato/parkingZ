@@ -1,4 +1,5 @@
-import { FlatList } from "react-native";
+import React, { useState } from "react";
+import { FlatList, Modal, TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
 import { 
@@ -15,6 +16,8 @@ import {
   Card 
 } from "./style";
 
+import styled from "styled-components/native";
+
 const veiculos = [
   { id: "1", placa: "NEI-0613", data: "28/04/2025 10:15" },
   { id: "2", placa: "LVN-8358", data: "28/04/2025 12:15" },
@@ -22,7 +25,9 @@ const veiculos = [
   { id: "4", placa: "LVN-6398", data: "28/04/2025 19:15" },
 ];
 
-export default function Veiculos() {
+export default function Veiculos({ navigation }) {
+  const [modalVisible, setModalVisible] = useState(false);
+
   const renderItem = ({ item }) => (
     <Card>
       <Row>
@@ -42,7 +47,7 @@ export default function Veiculos() {
   return (
     <Container>
       <Header>
-        <MenuIcon>
+        <MenuIcon onPress={() => setModalVisible(true)}>
           <Ionicons name="menu" size={28} color="#000" />
         </MenuIcon>
         <Titulo>lista de veiculos</Titulo>
@@ -54,6 +59,33 @@ export default function Veiculos() {
         renderItem={renderItem}
         contentContainerStyle={{ paddingBottom: 20 }}
       />
+
+      {/* Modal */}
+      <Modal
+        visible={modalVisible}
+        transparent
+        animationType="fade"
+        onRequestClose={() => setModalVisible(false)}
+      >
+        <Overlay>
+          <ModalBox>
+            <TituloModal>Bem-vindo!</TituloModal>
+            <SubTitulo>Escolha uma opção</SubTitulo>
+
+            <Botao onPress={() => { setModalVisible(false); navigation.navigate("Login"); }}>
+              <TextoBotao>Login</TextoBotao>
+            </Botao>
+
+            <Botao onPress={() => { setModalVisible(false); navigation.navigate("Cadastro"); }}>
+              <TextoBotao>Cadastro</TextoBotao>
+            </Botao>
+
+            <Fechar onPress={() => setModalVisible(false)}>
+              <TextoFechar>Fechar</TextoFechar>
+            </Fechar>
+          </ModalBox>
+        </Overlay>
+      </Modal>
     </Container>
   );
 }
