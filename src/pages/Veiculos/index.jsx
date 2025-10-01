@@ -1,4 +1,5 @@
-import { FlatList } from "react-native";
+import React, { useState } from "react";
+import { FlatList, Modal, TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { Container, Header, MenuIcon, Titulo, Row, IconBox, Info, Placa, CalendarIcon, Data, Card, TituloHeader, TitleButton, Button, Dowbar } from "./style";
 import { useState } from "react";
