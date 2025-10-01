@@ -1,6 +1,7 @@
 import { Button, EntradaContainer, Image, InputEntrada, Subtitle, Title, TitleButton } from "./style";
-
+import { useNavigation } from "@react-navigation/native";
 export default function Entrada() {
+  const navigation = useNavigation()
   return (
     <EntradaContainer>
       <Image source={require('../../assets/sherma.png')}></Image>
@@ -8,7 +9,7 @@ export default function Entrada() {
       <Subtitle>Entrada</Subtitle>
       <InputEntrada placeholder="placa:"></InputEntrada>
       <Button>
-        <TitleButton>Entrar</TitleButton>
+        <TitleButton onPress={() => navigation.navigate("Veiculos")}>Entrar</TitleButton>
       </Button>
     </EntradaContainer>
 

@@ -1,8 +1,8 @@
 import { LoginContainer, Titulo, Imagem, Subtittle, InputEmail, InputSenha, InputContainer, Button, TitleButton, IconsContainer, Line, SocialIcons, Image } from "./style";
-
-
+import { useNavigation } from "@react-navigation/native";
 
 export default function Login() {
+  const navigation = useNavigation()
   return (
     <LoginContainer>
       <Imagem source={require('../../assets/gojo.png')}></Imagem>
@@ -13,7 +13,7 @@ export default function Login() {
         <InputSenha placeholder="Senha:"></InputSenha>
       </InputContainer>
       <Button>
-        <TitleButton>Entrar</TitleButton>
+        <TitleButton onPress={() => navigation.navigate("Veiculos")}>Entrar</TitleButton>
       </Button>
       <IconsContainer>
         <SocialIcons>

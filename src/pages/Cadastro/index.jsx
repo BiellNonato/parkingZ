@@ -1,7 +1,7 @@
 import { CadastroContainer, TitlleGuaraná, Image, SubTittleShaw, InputNome, InputEmail, InputSenha, Button, TitleButton, InputContainer, IconsContainer, SocialIcons, Line, CadastroImage } from "./style";
-
+import { useNavigation } from "@react-navigation/native";
 export default function Cadastro() {
-
+   const navigation = useNavigation()
     return (
         <CadastroContainer>
             <Image source={require('../../assets/hornet-hollow-knigh.png')}></Image>
@@ -13,7 +13,7 @@ export default function Cadastro() {
                 <InputSenha placeholder="Senha:"></InputSenha>
             </InputContainer>
             <Button>
-                <TitleButton>Cadastrar</TitleButton>
+                <TitleButton onPress={() => navigation.navigate("Entrada")}>Cadastrar</TitleButton>
             </Button>
             <IconsContainer>
                 <SocialIcons>

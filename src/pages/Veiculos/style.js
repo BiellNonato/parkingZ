@@ -78,3 +78,27 @@ export const Data = styled.Text`
 export const ImageBox = styled.Image`
 
 `
+export const TitleButton = styled.Text`
+margin-top: 8px;
+justify-self: center;
+align-self: center;
+font-size: 15;
+color: black;
+
+`
+export const Button = styled.TouchableOpacity`
+margin-top: 30px;
+margin-left: 50px;
+justify-self: center;
+align-self: center;
+border-radius: 10px;
+width: 70;
+height: 41;
+background-color:  #D9D9D9;
+`
+
+export const Dowbar = styled.View`
+display: flex;
+flex-direction: row;
+
+`
