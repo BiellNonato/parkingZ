@@ -1,12 +1,15 @@
 import React from "react";
 import { StatusBar } from 'expo-status-bar';
 import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from '@react-navigation/native-stack'; 
+
 import Login from './src/pages/Login';
 import Veiculos from './src/pages/Veiculos';
 import Cadastro from './src/pages/Cadastro';
 import Entrada from './src/pages/Entrada';
 import Saida from './src/pages/Saida';
 
+const Stack = createNativeStackNavigator(); // ✅ CRIA O STACK
 
 export default function App() {
   return (

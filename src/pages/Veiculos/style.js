@@ -11,7 +11,7 @@ export const Header = styled.View`
   background-color: #3047c2;
   padding: 12px 16px;
   align-items: center;
-  gap: 12px;
+  gap: 50px;
 `;
 
 export const MenuIcon = styled.TouchableOpacity`
@@ -24,17 +24,20 @@ export const TituloHeader = styled.Text`
   color: white;
   text-align: center;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 `;
 
 export const Titulo = styled.Text`
   font-size: 20px;
   color: white;
+  justify-self: center;
+  align-self: center;
   font-family: monospace;
 `;
 
 
 export const Card = styled.View`
+width: 100%;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -43,8 +46,7 @@ export const Card = styled.View`
   border-bottom-color: black;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
-  margin-horizontal: 10px;
-  margin-vertical: 4px;
+  margin-vertical: 10px;
 `;
 
 export const Row = styled.View`
@@ -77,7 +79,6 @@ export const Data = styled.Text`
   font-size: 14px;
   color: white;
   font-family: monospace;
-<<<<<<< HEAD
 `;
 
 
@@ -93,11 +94,6 @@ export const ModalBox = styled.View`
   background-color: #ffffff;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  shadow-color: #000;
-  shadow-offset: 0px 4px;
-  shadow-opacity: 0.3;
-  shadow-radius: 8px;
-  elevation: 10;
 `;
 
 export const TituloModal = styled.Text`
@@ -122,7 +118,7 @@ export const Botao = styled.TouchableOpacity`
   padding: 12px;
   margin-vertical: 6px;
   border-radius: 12px;
-  background-color: #5d97c3;
+  background-color: #3047c2;;
   shadow-color: #000;
   shadow-offset: 0px 2px;
   shadow-opacity: 0.25;

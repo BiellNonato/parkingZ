@@ -20,10 +20,16 @@
         "foregroundImage": "",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.bielnt.parkingZ"
     },
     "web": {
       "favicon": ""
+    },
+    "extra": {
+      "eas": {
+        "projectId": "483fcbe3-3322-40ea-8b56-a7e690eee0cf"
+      }
     }
   }
 }

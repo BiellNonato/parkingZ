@@ -76,7 +76,7 @@ export default function Veiculos({ navigation }) {
       <TituloHeader>ParkingZ</TituloHeader>
       <Header>
         <MenuIcon onPress={openModal}>
-          <Ionicons name="menu" size={28} color="#000" />
+          <Ionicons name="menu" size={28} color="white" />
         </MenuIcon>
         <Titulo>Lista de Veículos</Titulo>
       </Header>
@@ -96,19 +96,19 @@ export default function Veiculos({ navigation }) {
                 <SubTitulo>Escolha uma opção</SubTitulo>
 
                 <Botao onPress={() => { closeModal(); navigation.navigate("Entrada"); }}>
-                  <TextoBotao>🚗 Entrada Veiculo</TextoBotao>
+                  <TextoBotao>Entrada Veiculo</TextoBotao>
                 </Botao>
 
                 <Botao onPress={() => { closeModal(); navigation.navigate("Saida"); }}>
-                  <TextoBotao>🅿 Saída</TextoBotao>
+                  <TextoBotao>Saída Veiculo</TextoBotao>
                 </Botao>
 
                 <Botao onPress={() => { closeModal(); navigation.navigate("Cadastro"); }}>
-                  <TextoBotao>📝 Cadastro</TextoBotao>
+                  <TextoBotao>Cadastro usuario</TextoBotao>
                 </Botao>
 
                 <Botao onPress={() => { closeModal(); navigation.navigate("Login"); }}>
-                  <TextoBotao>🔒 Logout</TextoBotao>
+                  <TextoBotao>Logout</TextoBotao>
                 </Botao>
 
                 <Fechar onPress={closeModal}>
