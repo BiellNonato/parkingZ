@@ -1,44 +1,13 @@
 import React, { useState } from "react";
 import { Alert } from "react-native";
 import { CadastroContainer, TitlleGuaraná, Image, SubTittleShaw, InputNome, InputEmail, InputSenha, Button, TitleButton, InputContainer, IconsContainer, SocialIcons, Line, CadastroImage } from "./style";
-<<<<<<< HEAD
 
 export default function Cadastro({ navigation }) {
 
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
-=======
-import { useNavigation } from "@react-navigation/native";
-export default function Cadastro() {
-   const navigation = useNavigation()
-    return (
-        <CadastroContainer>
-            <Image source={require('../../assets/hornet-hollow-knigh.png')}></Image>
-            <TitlleGuaraná>ParkingZ</TitlleGuaraná>
-            <SubTittleShaw>Cadastro</SubTittleShaw>
-            <InputContainer>
-                <InputNome placeholder="Nome:"></InputNome>
-                <InputEmail placeholder="Email:"></InputEmail>
-                <InputSenha placeholder="Senha:"></InputSenha>
-            </InputContainer>
-            <Button>
-                <TitleButton onPress={() => navigation.navigate("Entrada")}>Cadastrar</TitleButton>
-            </Button>
-            <IconsContainer>
-                <SocialIcons>
-                    <CadastroImage source={require('../../assets/facebook.png')}></CadastroImage>
-                </SocialIcons>
-                <SocialIcons>
-                    <CadastroImage source={require('../../assets/instagram.png')}></CadastroImage>
-                </SocialIcons>
-                <SocialIcons>
-                    <CadastroImage source={require('../../assets/x.png')}></CadastroImage>
-                </SocialIcons>
-            </IconsContainer>
-            <Line></Line>
-        </CadastroContainer>
->>>>>>> b7471d7973b585d9181bb28061eed2b5553cfd6b
+
 
  
   async function handleCadastro() {

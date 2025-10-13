@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useState } from "react";
 import { Alert } from "react-native";
 import { Button, SaidaContainer, Image, InputSaida, Subtitle, Title, TitleButton } from "./style";
@@ -40,33 +39,4 @@ export default function Saida({ navigation }) {
             Alert.alert("Erro", "Não foi possível remover o veículo.");
         }
     }
-
-=======
-import { Button, SaidaContainer, Image, InputSaida, Subtitle, Title, TitleButton, } from "./style";
-import { useNavigation } from "@react-navigation/native";
-export default function Saida() {
-    const navigation = useNavigation()
->>>>>>> b7471d7973b585d9181bb28061eed2b5553cfd6b
-    return (
-        <SaidaContainer>
-            <Image source={require('../../assets/Guardiões.png')} />
-            <Title>ParkingZ</Title>
-<<<<<<< HEAD
-            <Subtitle>Saída</Subtitle>
-            <InputSaida
-                placeholder="Placa:"
-                value={placa}
-                onChangeText={setPlaca}
-            />
-            <Button onPress={handleSaida}>
-                <TitleButton>Sair</TitleButton>
-=======
-            <Subtitle>Saida</Subtitle>
-            <InputSaida placeholder="placa:"></InputSaida>
-            <Button>
-                <TitleButton onPress={() => navigation.navigate("Veiculos")}>Sair</TitleButton>
->>>>>>> b7471d7973b585d9181bb28061eed2b5553cfd6b
-            </Button>
-        </SaidaContainer>
-    );
 }
