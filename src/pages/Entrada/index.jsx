@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Alert } from "react-native";
 import { Button, EntradaContainer, Image, InputEntrada, Subtitle, Title, TitleButton } from "./style";
+<<<<<<< HEAD
 
 export default function Entrada({ navigation }) {
   const [placa, setPlaca] = useState("");
@@ -32,11 +33,17 @@ export default function Entrada({ navigation }) {
     }
   }
 
+=======
+import { useNavigation } from "@react-navigation/native";
+export default function Entrada() {
+  const navigation = useNavigation()
+>>>>>>> b7471d7973b585d9181bb28061eed2b5553cfd6b
   return (
     <EntradaContainer>
       <Image source={require('../../assets/sherma.png')} />
       <Title>ParkingZ</Title>
       <Subtitle>Entrada</Subtitle>
+<<<<<<< HEAD
       <InputEntrada
         placeholder="Placa:"
         value={placa}
@@ -44,6 +51,11 @@ export default function Entrada({ navigation }) {
       />
       <Button onPress={handleEntrada}>
         <TitleButton>Entrar</TitleButton>
+=======
+      <InputEntrada placeholder="placa:"></InputEntrada>
+      <Button>
+        <TitleButton onPress={() => navigation.navigate("Veiculos")}>Entrar</TitleButton>
+>>>>>>> b7471d7973b585d9181bb28061eed2b5553cfd6b
       </Button>
     </EntradaContainer>
   );

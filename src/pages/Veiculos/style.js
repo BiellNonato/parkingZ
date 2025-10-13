@@ -77,6 +77,7 @@ export const Data = styled.Text`
   font-size: 14px;
   color: white;
   font-family: monospace;
+<<<<<<< HEAD
 `;
 
 
@@ -145,3 +146,31 @@ export const TextoFechar = styled.Text`
   color: #555;
   font-size: 14px;
 `;
+=======
+`
+
+export const TitleButton = styled.Text`
+margin-top: 8px;
+justify-self: center;
+align-self: center;
+font-size: 15;
+color: black;
+
+`
+export const Button = styled.TouchableOpacity`
+margin-top: 30px;
+margin-left: 50px;
+justify-self: center;
+align-self: center;
+border-radius: 10px;
+width: 70;
+height: 41;
+background-color:  #D9D9D9;
+`
+
+export const Dowbar = styled.View`
+display: flex;
+flex-direction: row;
+
+`
+>>>>>>> b7471d7973b585d9181bb28061eed2b5553cfd6b

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Alert } from "react-native";
 import { LoginContainer, Titulo, Imagem, Subtittle, InputEmail, InputSenha, InputContainer, Button, TitleButton, IconsContainer, Line, SocialIcons, Image } from "./style";
+<<<<<<< HEAD
 
 export default function Login({ navigation }) {
   const [email, setEmail] = useState("");
@@ -33,6 +34,12 @@ export default function Login({ navigation }) {
     }
   }
 
+=======
+import { useNavigation } from "@react-navigation/native";
+
+export default function Login() {
+  const navigation = useNavigation()
+>>>>>>> b7471d7973b585d9181bb28061eed2b5553cfd6b
   return (
     <LoginContainer>
       <Imagem source={require('../../assets/gojo.png')} />
@@ -42,7 +49,13 @@ export default function Login({ navigation }) {
         <InputEmail placeholder="Email:" value={email} onChangeText={setEmail} />
         <InputSenha placeholder="Senha:" secureTextEntry value={senha} onChangeText={setSenha} />
       </InputContainer>
+<<<<<<< HEAD
       <Button onPress={handleLogin}><TitleButton>Entrar</TitleButton></Button>
+=======
+      <Button>
+        <TitleButton onPress={() => navigation.navigate("Veiculos")}>Entrar</TitleButton>
+      </Button>
+>>>>>>> b7471d7973b585d9181bb28061eed2b5553cfd6b
       <IconsContainer>
         <SocialIcons><Image source={require('../../assets/facebook.png')} /></SocialIcons>
         <SocialIcons><Image source={require('../../assets/instagram.png')} /></SocialIcons>

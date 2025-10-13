@@ -10,9 +10,14 @@
   },
   "dependencies": {
     "@expo/vector-icons": "^14.1.0",
+<<<<<<< HEAD
     "@react-navigation/native": "^7.1.18",
     "@react-navigation/native-stack": "^7.3.27",
     "axios": "^1.12.2",
+=======
+    "@react-navigation/native": "^7.1.17",
+    "@react-navigation/native-stack": "^7.3.26",
+>>>>>>> b7471d7973b585d9181bb28061eed2b5553cfd6b
     "expo": "^54.0.8",
     "expo-asset": "~11.1.7",
     "expo-font": "~13.3.2",
@@ -26,7 +31,9 @@
     "undefined": "@expo-google-fonts/[trajan-pro/regular]"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "@types/react": "~19.1.10",
+    "typescript": "~5.9.2"
   },
   "private": true
 }
