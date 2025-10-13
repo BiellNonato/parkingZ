@@ -1,35 +1,39 @@
 import styled from "styled-components/native";
 
+
 export const Container = styled.View`
   flex: 1;
   background-color: #5d97c3;
 `;
 
-
 export const Header = styled.View`
   flex-direction: row;
   background-color: #3047c2;
   padding: 12px 16px;
-  gap: 60;
-`
+  align-items: center;
+  gap: 12px;
+`;
 
 export const MenuIcon = styled.TouchableOpacity`
-width: 30;
-`
+  width: 30px;
+  height: 30px;
+`;
 
 export const TituloHeader = styled.Text`
-justify-self: center;
-align-self: center;
-font-size: 30px;
-padding: 10px;
-color: white;
-`
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+`;
 
 export const Titulo = styled.Text`
-font-size: 20px;
-color: white;
-font-family: monospace;
-`
+  font-size: 20px;
+  color: white;
+  font-family: monospace;
+`;
+
+
 export const Card = styled.View`
   flex-direction: row;
   align-items: center;
@@ -37,89 +41,107 @@ export const Card = styled.View`
   padding: 12px 16px;
   border-bottom-width: 1px;
   border-bottom-color: black;
-  justify-self: center;
-`
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  margin-horizontal: 10px;
+  margin-vertical: 4px;
+`;
 
 export const Row = styled.View`
   flex-direction: row;
   align-items: center;
-  justify-self: center;
- 
-`
+`;
 
 export const IconBox = styled.Image`
   width: 45px;
   height: 45px;
   margin-right: 12px;
-`
-
-export const Info = styled.View`
 `;
+
+export const Info = styled.View``;
 
 export const Placa = styled.Text`
   font-size: 18px;
   font-weight: bold;
   color: white;
   font-family: monospace;
-`
+`;
 
 export const CalendarIcon = styled.Image`
   width: 16px;
   height: 16px;
   margin-right: 6px;
-`
+`;
 
 export const Data = styled.Text`
   font-size: 14px;
   color: white;
   font-family: monospace;
-`
-const Overlay = styled.View`
+`;
+
+
+export const Overlay = styled.View`
   flex: 1;
   background-color: rgba(0, 0, 0, 0.6);
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 `;
 
-const ModalBox = styled.View`
-  width: 80%;
+export const ModalBox = styled.View`
+  width: 100%;
   padding: 20px;
-  background-color: white;
-  border-radius: 16px;
-  align-items: center;
+  background-color: #ffffff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  shadow-color: #000;
+  shadow-offset: 0px 4px;
+  shadow-opacity: 0.3;
+  shadow-radius: 8px;
+  elevation: 10;
 `;
 
-const TituloModal = styled.Text`
-  font-size: 20px;
+export const TituloModal = styled.Text`
+  font-size: 22px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
+  text-align: center;
 `;
 
-const SubTitulo = styled.Text`
+export const SubTitulo = styled.Text`
   font-size: 16px;
   margin-bottom: 20px;
+  text-align: center;
+  color: #555;
 `;
 
-const Botao = styled.TouchableOpacity`
+export const Botao = styled.TouchableOpacity`
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   padding: 12px;
   margin-vertical: 6px;
   border-radius: 12px;
   background-color: #5d97c3;
-  align-items: center;
+  shadow-color: #000;
+  shadow-offset: 0px 2px;
+  shadow-opacity: 0.25;
+  shadow-radius: 3.84px;
+  elevation: 5;
 `;
 
-const TextoBotao = styled.Text`
+export const TextoBotao = styled.Text`
   color: white;
   font-size: 16px;
   font-weight: bold;
+  margin-left: 8px;
 `;
 
-const Fechar = styled.TouchableOpacity`
+export const Fechar = styled.TouchableOpacity`
   margin-top: 10px;
+  align-items: center;
 `;
 
-const TextoFechar = styled.Text`
+export const TextoFechar = styled.Text`
   color: #555;
   font-size: 14px;
 `;
