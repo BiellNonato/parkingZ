@@ -4,11 +4,11 @@
     "slug": "parkingZ",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "",
+    "icon": "./src/assets/satoru.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "",
+      "image": "./src/assets/satoru.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,19 +17,23 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./src/assets/satoru.png",
+        "backgroundColor": "#5d97c3"
       },
       "edgeToEdgeEnabled": true,
       "package": "com.bielnt.parkingZ"
     },
     "web": {
-      "favicon": ""
+      "favicon": "./src/assets/satoru.png"
     },
     "extra": {
       "eas": {
         "projectId": "483fcbe3-3322-40ea-8b56-a7e690eee0cf"
       }
-    }
+    },
+    "plugins": [
+      "expo-asset",
+      "expo-font"
+    ]
   }
 }
