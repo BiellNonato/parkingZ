@@ -11,7 +11,7 @@ export const Header = styled.View`
   background-color: #3047c2;
   padding: 12px 16px;
   align-items: center;
-  gap: 50px;
+  gap: 60px;
 `;
 
 export const MenuIcon = styled.TouchableOpacity`
@@ -24,7 +24,7 @@ export const TituloHeader = styled.Text`
   color: white;
   text-align: center;
   font-weight: bold;
-  margin-bottom: 12px;
+  margin-top: 25px;
 `;
 
 export const Titulo = styled.Text`
