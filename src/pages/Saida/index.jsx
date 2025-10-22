@@ -55,7 +55,7 @@ export default function Saida({ navigation }) {
             <Title>ParkingZ</Title>
             <Subtitle>Saída</Subtitle>
             <InputSaida
-                placeholder="Placa"
+                placeholder="Placa" placeholderTextColor={"black"} 
                 value={placa}
                 onChangeText={setPlaca}
                 autoCapitalize="characters"

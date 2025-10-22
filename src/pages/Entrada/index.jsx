@@ -54,7 +54,7 @@ export default function Entrada() {
       <Subtitle>Entrada</Subtitle>
 
       <InputEntrada
-        placeholder="Placa:"
+        placeholder="Placa:" placeholderTextColor={"black"} 
         value={placa}
         onChangeText={setPlaca}
         autoCapitalize="characters"

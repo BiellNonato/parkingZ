@@ -58,14 +58,14 @@ export default function Login() {
 
       <InputContainer>
         <InputEmail
-          placeholder="Email:"
+          placeholder="Email:" placeholderTextColor={"black"} 
           value={email}
           onChangeText={setEmail}
           keyboardType="email-address"
           autoCapitalize="none"
         />
         <InputSenha
-          placeholder="Senha:"
+          placeholder="Senha:" placeholderTextColor={"black"} 
           secureTextEntry
           value={senha}
           onChangeText={setSenha}

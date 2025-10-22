@@ -44,9 +44,9 @@ export default function Cadastro({ navigation }) {
       <TitlleGuaraná>ParkingZ</TitlleGuaraná>
       <SubTittleShaw>Cadastro</SubTittleShaw>
       <InputContainer>
-        <InputNome placeholder="Nome:" value={nome} onChangeText={setNome} />
-        <InputEmail placeholder="Email:" value={email} onChangeText={setEmail} />
-        <InputSenha placeholder="Senha:" secureTextEntry value={senha} onChangeText={setSenha} />
+        <InputNome placeholder="Nome:" placeholderTextColor={"black"} value={nome} onChangeText={setNome} />
+        <InputEmail placeholder="Email:" placeholderTextColor={"black"}  value={email} onChangeText={setEmail} />
+        <InputSenha placeholder="Senha:" placeholderTextColor={"black"}  secureTextEntry value={senha} onChangeText={setSenha} />
       </InputContainer>
       <Button onPress={handleCadastro}>
         <TitleButton>Cadastrar</TitleButton>
