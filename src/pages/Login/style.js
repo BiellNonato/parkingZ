@@ -110,6 +110,19 @@ align-self: center;
 justify-self: center;
 `  
 
+export const RegisterLink = styled.TouchableOpacity`
+  margin-top: 12px;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const RegisterText = styled.Text`
+  color: #e3e5e7ff;
+  font-weight: bold;
+  text-decoration-line: underline;
+`;
+
+
 
 
 

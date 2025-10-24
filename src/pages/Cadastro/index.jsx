@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Alert } from "react-native";
-import { CadastroContainer, TitlleGuaraná, Image, SubTittleShaw, InputNome, InputEmail, InputSenha, Button, TitleButton, InputContainer, IconsContainer, SocialIcons, Line, CadastroImage } from "./style";
+import { CadastroContainer, TitlleGuaraná, Image, SubTittleShaw, InputNome, InputEmail, InputSenha, Button, TitleButton, InputContainer, Line, } from "./style";
 
 export default function Cadastro({ navigation }) {
 
@@ -9,7 +9,7 @@ export default function Cadastro({ navigation }) {
   const [senha, setSenha] = useState("");
 
 
- 
+
   async function handleCadastro() {
     if (!nome || !email || !senha) {
       Alert.alert("Erro", "Preencha todos os campos!");
@@ -17,7 +17,7 @@ export default function Cadastro({ navigation }) {
     }
 
     try {
-     
+
       const response = await fetch("https://68ebe9a476b3362414cf0a7f.mockapi.io/estacionamento/users", {
         method: "POST",
         headers: {
@@ -45,23 +45,12 @@ export default function Cadastro({ navigation }) {
       <SubTittleShaw>Cadastro</SubTittleShaw>
       <InputContainer>
         <InputNome placeholder="Nome:" placeholderTextColor={"black"} value={nome} onChangeText={setNome} />
-        <InputEmail placeholder="Email:" placeholderTextColor={"black"}  value={email} onChangeText={setEmail} />
-        <InputSenha placeholder="Senha:" placeholderTextColor={"black"}  secureTextEntry value={senha} onChangeText={setSenha} />
+        <InputEmail placeholder="Email:" placeholderTextColor={"black"} value={email} onChangeText={setEmail} />
+        <InputSenha placeholder="Senha:" placeholderTextColor={"black"} secureTextEntry value={senha} onChangeText={setSenha} />
       </InputContainer>
       <Button onPress={handleCadastro}>
         <TitleButton>Cadastrar</TitleButton>
       </Button>
-      <IconsContainer>
-        <SocialIcons>
-          <CadastroImage source={require('../../assets/facebook.png')}></CadastroImage>
-        </SocialIcons>
-        <SocialIcons>
-          <CadastroImage source={require('../../assets/instagram.png')}></CadastroImage>
-        </SocialIcons>
-        <SocialIcons>
-          <CadastroImage source={require('../../assets/x.png')}></CadastroImage>
-        </SocialIcons>
-      </IconsContainer>
       <Line></Line>
     </CadastroContainer>
   );

@@ -11,11 +11,12 @@ import {
   InputContainer,
   Button,
   TitleButton,
-  IconsContainer,
+  RegisterLink,
+  RegisterText,
   Line,
-  SocialIcons,
-  Image
+
 } from "./style";
+
 
 export default function Login() {
   const navigation = useNavigation();
@@ -58,14 +59,14 @@ export default function Login() {
 
       <InputContainer>
         <InputEmail
-          placeholder="Email:" placeholderTextColor={"black"} 
+          placeholder="Email:" placeholderTextColor={"black"}
           value={email}
           onChangeText={setEmail}
           keyboardType="email-address"
           autoCapitalize="none"
         />
         <InputSenha
-          placeholder="Senha:" placeholderTextColor={"black"} 
+          placeholder="Senha:" placeholderTextColor={"black"}
           secureTextEntry
           value={senha}
           onChangeText={setSenha}
@@ -76,17 +77,10 @@ export default function Login() {
         <TitleButton>Entrar</TitleButton>
       </Button>
 
-      <IconsContainer>
-        <SocialIcons>
-          <Image source={require("../../assets/facebook.png")} />
-        </SocialIcons>
-        <SocialIcons>
-          <Image source={require("../../assets/instagram.png")} />
-        </SocialIcons>
-        <SocialIcons>
-          <Image source={require("../../assets/x.png")} />
-        </SocialIcons>
-      </IconsContainer>
+      <RegisterLink onPress={() => navigation.navigate("Cadastro")}>
+        <RegisterText>Não tem conta? Cadastre-se</RegisterText>
+      </RegisterLink>
+
 
       <Line />
     </LoginContainer>
